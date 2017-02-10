@@ -1,0 +1,133 @@
+dsa15_149:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall hw6_2.cpp -c
+Makefile:24: recipe for target 'hw6_2.o' failed
+Makefile:27: warning: overriding recipe for target 'hw6_2'
+Makefile.inc:7: warning: ignoring old recipe for target 'hw6_2'
+Makefile:30: warning: overriding recipe for target 'hw6_3'
+Makefile.inc:9: warning: ignoring old recipe for target 'hw6_3'
+Makefile:39: warning: overriding recipe for target 'clean'
+Makefile.inc:17: warning: ignoring old recipe for target 'clean'
+hw6_2.cpp: In function ‘int main()’:
+hw6_2.cpp:12:3: error: ‘BST_Tree’ was not declared in this scope
+   BST_Tree BS_T;
+   ^
+hw6_2.cpp:13:3: error: ‘AVL_Tree’ was not declared in this scope
+   AVL_Tree AVL_T;
+   ^
+hw6_2.cpp:14:3: error: ‘RB_Tree’ was not declared in this scope
+   RB_Tree RB_T;
+   ^
+hw6_2.cpp:21:3: error: ‘AVL_Node’ was not declared in this scope
+   AVL_Node* AVLTRoot = AVL_T.AVLInit();
+   ^
+hw6_2.cpp:21:13: error: ‘AVLTRoot’ was not declared in this scope
+   AVL_Node* AVLTRoot = AVL_T.AVLInit();
+             ^
+hw6_2.cpp:21:24: error: ‘AVL_T’ was not declared in this scope
+   AVL_Node* AVLTRoot = AVL_T.AVLInit();
+                        ^
+hw6_2.cpp:22:3: error: ‘RB_Node’ was not declared in this scope
+   RB_Node *RBTRoot = RB_T.RBInit();
+   ^
+hw6_2.cpp:22:12: error: ‘RBTRoot’ was not declared in this scope
+   RB_Node *RBTRoot = RB_T.RBInit();
+            ^
+hw6_2.cpp:22:22: error: ‘RB_T’ was not declared in this scope
+   RB_Node *RBTRoot = RB_T.RBInit();
+                      ^
+hw6_2.cpp:41:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<wordlst.size(); i++)
+                  ^
+hw6_2.cpp:44:3: error: ‘BST_Node’ was not declared in this scope
+   BST_Node *BSTRoot;
+   ^
+hw6_2.cpp:44:13: error: ‘BSTRoot’ was not declared in this scope
+   BST_Node *BSTRoot;
+             ^
+hw6_2.cpp:45:13: error: ‘BS_T’ was not declared in this scope
+   BSTRoot = BS_T.InputLst(lst, 0, 30);
+             ^
+make: *** [hw6_2.o] Error 1
+
+$make hw6_2
+g++ -O2 -std=c++11 -Wall hw6_2.cpp -c
+Makefile:24: recipe for target 'hw6_2.o' failed
+Makefile:27: warning: overriding recipe for target 'hw6_2'
+Makefile.inc:7: warning: ignoring old recipe for target 'hw6_2'
+Makefile:30: warning: overriding recipe for target 'hw6_3'
+Makefile.inc:9: warning: ignoring old recipe for target 'hw6_3'
+Makefile:39: warning: overriding recipe for target 'clean'
+Makefile.inc:17: warning: ignoring old recipe for target 'clean'
+hw6_2.cpp: In function ‘int main()’:
+hw6_2.cpp:12:3: error: ‘BST_Tree’ was not declared in this scope
+   BST_Tree BS_T;
+   ^
+hw6_2.cpp:13:3: error: ‘AVL_Tree’ was not declared in this scope
+   AVL_Tree AVL_T;
+   ^
+hw6_2.cpp:14:3: error: ‘RB_Tree’ was not declared in this scope
+   RB_Tree RB_T;
+   ^
+hw6_2.cpp:21:3: error: ‘AVL_Node’ was not declared in this scope
+   AVL_Node* AVLTRoot = AVL_T.AVLInit();
+   ^
+hw6_2.cpp:21:13: error: ‘AVLTRoot’ was not declared in this scope
+   AVL_Node* AVLTRoot = AVL_T.AVLInit();
+             ^
+hw6_2.cpp:21:24: error: ‘AVL_T’ was not declared in this scope
+   AVL_Node* AVLTRoot = AVL_T.AVLInit();
+                        ^
+hw6_2.cpp:22:3: error: ‘RB_Node’ was not declared in this scope
+   RB_Node *RBTRoot = RB_T.RBInit();
+   ^
+hw6_2.cpp:22:12: error: ‘RBTRoot’ was not declared in this scope
+   RB_Node *RBTRoot = RB_T.RBInit();
+            ^
+hw6_2.cpp:22:22: error: ‘RB_T’ was not declared in this scope
+   RB_Node *RBTRoot = RB_T.RBInit();
+                      ^
+hw6_2.cpp:41:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<wordlst.size(); i++)
+                  ^
+hw6_2.cpp:44:3: error: ‘BST_Node’ was not declared in this scope
+   BST_Node *BSTRoot;
+   ^
+hw6_2.cpp:44:13: error: ‘BSTRoot’ was not declared in this scope
+   BST_Node *BSTRoot;
+             ^
+hw6_2.cpp:45:13: error: ‘BS_T’ was not declared in this scope
+   BSTRoot = BS_T.InputLst(lst, 0, 30);
+             ^
+make: *** [hw6_2.o] Error 1
+
+$make hw6_3
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+Makefile:30: recipe for target 'hw6_3' failed
+Makefile:27: warning: overriding recipe for target 'hw6_2'
+Makefile.inc:7: warning: ignoring old recipe for target 'hw6_2'
+Makefile:30: warning: overriding recipe for target 'hw6_3'
+Makefile.inc:9: warning: ignoring old recipe for target 'hw6_3'
+Makefile:39: warning: overriding recipe for target 'clean'
+Makefile.inc:17: warning: ignoring old recipe for target 'clean'
+hw6_3.o: In function `main':
+hw6_3.cpp:(.text.startup+0x12c): 未定義參考到「AVL_Tree::Insert(AVL_Node*, int)」
+hw6_3.cpp:(.text.startup+0x534): 未定義參考到「Set::FindOwner(Node**, int)」
+hw6_3.cpp:(.text.startup+0x545): 未定義參考到「AVL_Tree::MaxGet(AVL_Node*, long long)」
+hw6_3.cpp:(.text.startup+0x559): 未定義參考到「Set::FindOwner(Node**, int)」
+hw6_3.cpp:(.text.startup+0x5eb): 未定義參考到「Set::Merge(Node**, int, int)」
+hw6_3.cpp:(.text.startup+0x60c): 未定義參考到「AVL_Tree::Merge(AVL_Node*, AVL_Node*)」
+collect2: error: ld returned 1 exit status
+make: *** [hw6_3] Error 1
+
+------
+
+[Error]Execute hw6_2 error: Executable file not found
+[Error]Execute hw6_3 error: Executable file not found

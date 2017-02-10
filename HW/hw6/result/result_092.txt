@@ -1,0 +1,130 @@
+dsa15_092:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+Makefile:30: recipe for target 'hw6_3' failed
+/usr/bin/ld: 無法開啟輸出檔案 hw6_3: 是個目錄
+collect2: error: ld returned 1 exit status
+make: *** [hw6_3] Error 1
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+Makefile:30: recipe for target 'hw6_3' failed
+/usr/bin/ld: 無法開啟輸出檔案 hw6_3: 是個目錄
+collect2: error: ld returned 1 exit status
+make: *** [hw6_3] Error 1
+
+------
+
+[Executing] $./hw6_2
+
+real	0m0.088s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.097s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.049s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.057s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.058s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+Total: 10
+------
+
+[Executing] $./hw6_3
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.036s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.050s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.024s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.031s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.029s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.026s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.021s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: ./hw6_3: 是個目錄
+
+real	0m0.028s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+Total: 0
+------
+

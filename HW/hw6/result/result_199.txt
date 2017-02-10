@@ -1,0 +1,106 @@
+dsa15_199:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+make: 'hw6_3' is up to date.
+
+------
+
+[Executing] $./hw6_2
+
+real	0m0.053s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.065s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.072s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.077s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.070s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+Total: 10
+------
+
+[Executing] $./hw6_3
+
+real	0m0.076s
+user	0m0.008s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.079s
+user	0m0.008s
+sys	0m0.004s
+Result: AC
+---
+
+real	0m0.311s
+user	0m0.172s
+sys	0m0.020s
+Result: AC
+---
+
+real	0m0.443s
+user	0m0.288s
+sys	0m0.016s
+Result: AC
+---
+
+real	0m0.403s
+user	0m0.276s
+sys	0m0.016s
+Result: AC
+---
+
+real	0m0.679s
+user	0m0.504s
+sys	0m0.044s
+Result: AC
+---
+
+real	0m0.533s
+user	0m0.248s
+sys	0m0.008s
+Result: WA
+---
+
+real	0m0.358s
+user	0m0.224s
+sys	0m0.008s
+Result: AC
+---
+Total: 35
+------
+

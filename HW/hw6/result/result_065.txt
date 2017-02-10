@@ -1,0 +1,5 @@
+dsa15_065:
+[Error]Copy Makefile and tree lib error: dsa15_065/hw6/ directory not found
+[Error]Build error: dsa15_065/hw6/ directory not found
+[Error]Execute hw6_2 error: Executable file not found
+[Error]Execute hw6_3 error: Executable file not found

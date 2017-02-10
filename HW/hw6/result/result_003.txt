@@ -1,0 +1,72 @@
+dsa15_003:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+make: *** No rule to make target 'hw6_2.o', needed by 'hw6_2'.  Stop.
+
+$make hw6_2
+make: *** No rule to make target 'hw6_2.o', needed by 'hw6_2'.  Stop.
+
+$make hw6_3
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+
+------
+
+[Error]Execute hw6_2 error: Executable file not found
+[Executing] $./hw6_3
+
+real	0m0.132s
+user	0m0.008s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.110s
+user	0m0.012s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.613s
+user	0m0.172s
+sys	0m0.020s
+Result: AC
+---
+
+real	0m0.571s
+user	0m0.412s
+sys	0m0.012s
+Result: AC
+---
+
+real	0m0.590s
+user	0m0.284s
+sys	0m0.024s
+Result: WA
+---
+
+real	0m0.775s
+user	0m0.572s
+sys	0m0.028s
+Result: WA
+---
+
+real	0m0.428s
+user	0m0.248s
+sys	0m0.012s
+Result: WA
+---
+
+real	0m0.452s
+user	0m0.224s
+sys	0m0.008s
+Result: WA
+---
+Total: 15
+------
+

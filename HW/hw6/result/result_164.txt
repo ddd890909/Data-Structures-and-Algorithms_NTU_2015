@@ -1,0 +1,106 @@
+dsa15_164:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+hw6_2.o: In function `main':
+hw6_2.c:(.text.startup+0x38): 警告：the `gets' function is dangerous and should not be used.
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+make: 'hw6_3' is up to date.
+
+------
+
+[Executing] $./hw6_2
+./my_sh.sh: line 2: 10179 程式記憶體區段錯誤   ./hw6_2 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_2/wekj34hsdfcsdf234/1.in > 6_2_1.out
+
+real	0m0.021s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: 10182 程式記憶體區段錯誤   ./hw6_2 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_2/wekj34hsdfcsdf234/2.in > 6_2_2.out
+
+real	0m0.045s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: 10185 程式記憶體區段錯誤   ./hw6_2 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_2/wekj34hsdfcsdf234/3.in > 6_2_3.out
+
+real	0m0.018s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: 10188 程式記憶體區段錯誤   ./hw6_2 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_2/wekj34hsdfcsdf234/4.in > 6_2_4.out
+
+real	0m0.022s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: 10191 程式記憶體區段錯誤   ./hw6_2 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_2/wekj34hsdfcsdf234/5.in > 6_2_5.out
+
+real	0m0.029s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+Total: 0
+------
+
+[Executing] $./hw6_3
+
+real	0m0.177s
+user	0m0.008s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.108s
+user	0m0.020s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m1.146s
+user	0m1.000s
+sys	0m0.000s
+Result: AC
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+
+real	0m0.682s
+user	0m0.572s
+sys	0m0.012s
+Result: AC
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Total: 20
+------
+

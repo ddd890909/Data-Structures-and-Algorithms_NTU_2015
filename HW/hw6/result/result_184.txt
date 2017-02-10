@@ -1,0 +1,88 @@
+dsa15_184:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+make: 'hw6_3' is up to date.
+
+------
+
+[Executing] $./hw6_2
+
+real	0m0.063s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.070s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.091s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.080s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.074s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+Total: 10
+------
+
+[Executing] $./hw6_3
+
+real	0m0.120s
+user	0m0.040s
+sys	0m0.004s
+Result: AC
+---
+
+real	0m0.481s
+user	0m0.400s
+sys	0m0.012s
+Result: AC
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Total: 10
+------
+

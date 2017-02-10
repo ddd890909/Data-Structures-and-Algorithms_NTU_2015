@@ -1,0 +1,17 @@
+dsa15_050:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+Makefile.inc:14: *** Too many open files.  Stop.
+
+$make hw6_2
+Makefile.inc:14: *** Too many open files.  Stop.
+
+$make hw6_3
+Makefile.inc:14: *** Too many open files.  Stop.
+
+------
+
+[Error]Execute hw6_2 error: Executable file not found
+[Error]Execute hw6_3 error: Executable file not found

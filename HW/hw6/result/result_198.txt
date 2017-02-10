@@ -1,0 +1,102 @@
+dsa15_198:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+hw6_2.o: In function `main':
+hw6_2.c:(.text.startup+0x56): 警告：the `gets' function is dangerous and should not be used.
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+make: 'hw6_3' is up to date.
+
+------
+
+[Executing] $./hw6_2
+
+real	0m0.087s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.045s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.054s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.062s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.059s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+Total: 25
+------
+
+[Executing] $./hw6_3
+
+real	0m0.113s
+user	0m0.012s
+sys	0m0.012s
+Result: AC
+---
+
+real	0m0.144s
+user	0m0.032s
+sys	0m0.004s
+Result: AC
+---
+
+real	0m0.625s
+user	0m0.372s
+sys	0m0.072s
+Result: AC
+---
+
+real	0m1.070s
+user	0m0.792s
+sys	0m0.140s
+Result: AC
+---
+
+real	0m0.953s
+user	0m0.648s
+sys	0m0.128s
+Result: AC
+---
+
+real	0m1.092s
+user	0m0.820s
+sys	0m0.148s
+Result: AC
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Total: 30
+------
+

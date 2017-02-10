@@ -1,0 +1,93 @@
+dsa15_055:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+g++ hw6_3.cpp avl_ntuDsa.cpp disjoint.cpp -std=c++11 -O3 -o hw6_3		
+gcc hw6_2.c avl.c rb.c bst.c -std=c99 -o hw6_2
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+Makefile:30: recipe for target 'hw6_3' failed
+hw6_3.o: In function `transfer(Game**, partitionTree**, int, int)':
+hw6_3.cpp:(.text+0x1b): 未定義參考到「partitionTree::find()」
+hw6_3.cpp:(.text+0x28): 未定義參考到「partitionTree::find()」
+hw6_3.cpp:(.text+0x46): 未定義參考到「partitionTree::Transfer(partitionTree*)」
+hw6_3.cpp:(.text+0x54): 未定義參考到「Game::total()」
+hw6_3.cpp:(.text+0x5f): 未定義參考到「Game::total()」
+hw6_3.cpp:(.text+0x76): 未定義參考到「Game::Get(avl_node*)」
+hw6_3.o: In function `buy(Game**, partitionTree**, int, long long)':
+hw6_3.cpp:(.text+0xc2): 未定義參考到「partitionTree::find()」
+hw6_3.cpp:(.text+0xd5): 未定義參考到「Game::GetHowMany(long long)」
+hw6_3.o: In function `transfer(Game**, partitionTree**, int, int)':
+hw6_3.cpp:(.text+0xa8): 未定義參考到「Game::Get(avl_node*)」
+hw6_3.o: In function `main':
+hw6_3.cpp:(.text.startup+0x56): 未定義參考到「Game::Game(int)」
+hw6_3.cpp:(.text.startup+0x75): 未定義參考到「partitionTree::partitionTree(int)」
+collect2: error: ld returned 1 exit status
+make: *** [hw6_3] Error 1
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+Makefile:30: recipe for target 'hw6_3' failed
+hw6_3.o: In function `transfer(Game**, partitionTree**, int, int)':
+hw6_3.cpp:(.text+0x1b): 未定義參考到「partitionTree::find()」
+hw6_3.cpp:(.text+0x28): 未定義參考到「partitionTree::find()」
+hw6_3.cpp:(.text+0x46): 未定義參考到「partitionTree::Transfer(partitionTree*)」
+hw6_3.cpp:(.text+0x54): 未定義參考到「Game::total()」
+hw6_3.cpp:(.text+0x5f): 未定義參考到「Game::total()」
+hw6_3.cpp:(.text+0x76): 未定義參考到「Game::Get(avl_node*)」
+hw6_3.o: In function `buy(Game**, partitionTree**, int, long long)':
+hw6_3.cpp:(.text+0xc2): 未定義參考到「partitionTree::find()」
+hw6_3.cpp:(.text+0xd5): 未定義參考到「Game::GetHowMany(long long)」
+hw6_3.o: In function `transfer(Game**, partitionTree**, int, int)':
+hw6_3.cpp:(.text+0xa8): 未定義參考到「Game::Get(avl_node*)」
+hw6_3.o: In function `main':
+hw6_3.cpp:(.text.startup+0x56): 未定義參考到「Game::Game(int)」
+hw6_3.cpp:(.text.startup+0x75): 未定義參考到「partitionTree::partitionTree(int)」
+collect2: error: ld returned 1 exit status
+make: *** [hw6_3] Error 1
+
+------
+
+[Executing] $./hw6_2
+
+real	0m0.070s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.066s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.052s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.066s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.066s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+Total: 10
+------
+
+[Error]Execute hw6_3 error: Executable file not found

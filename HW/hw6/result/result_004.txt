@@ -1,0 +1,59 @@
+dsa15_004:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+make: *** No rule to make target 'hw6_3.o', needed by 'hw6_3'.  Stop.
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+make: *** No rule to make target 'hw6_3.o', needed by 'hw6_3'.  Stop.
+
+------
+
+[Executing] $./hw6_2
+
+real	0m0.052s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.061s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.146s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+./my_sh.sh: line 2: 26651 程式記憶體區段錯誤   ./hw6_2 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_2/wekj34hsdfcsdf234/4.in > 6_2_4.out
+
+real	0m0.024s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2: 26654 程式記憶體區段錯誤   ./hw6_2 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_2/wekj34hsdfcsdf234/5.in > 6_2_5.out
+
+real	0m0.097s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+Total: 0
+------
+
+[Error]Execute hw6_3 error: Executable file not found

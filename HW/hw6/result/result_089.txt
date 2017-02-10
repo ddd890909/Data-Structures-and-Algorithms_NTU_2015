@@ -1,0 +1,113 @@
+dsa15_089:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall avl.o rb.o bst.o hw6_2.o -o hw6_2
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+
+$make hw6_2
+make: 'hw6_2' is up to date.
+
+$make hw6_3
+make: 'hw6_3' is up to date.
+
+------
+
+[Executing] $./hw6_2
+
+real	0m0.061s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.057s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.055s
+user	0m0.000s
+sys	0m0.000s
+Result: WA
+---
+
+real	0m0.069s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+
+real	0m0.062s
+user	0m0.000s
+sys	0m0.000s
+Result: AC
+---
+Total: 10
+------
+
+[Executing] $./hw6_3
+./my_sh.sh: line 2:  3397 程式記憶體區段錯誤   ./hw6_3 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_3/hbewi32954jfdxkwei/hw6.in1 > 6_3_1.out
+
+real	0m0.039s
+user	0m0.000s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+hw6_3: avl_ntudsa.c:176: avl_probe: Assertion `x->avl_balance == -1' failed.
+./my_sh.sh: line 2:  3400 已經終止            ./hw6_3 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_3/hbewi32954jfdxkwei/hw6.in2 > 6_3_2.out
+
+real	0m0.097s
+user	0m0.004s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+hw6_3: avl_ntudsa.c:122: avl_probe: Assertion `x->avl_balance == +1' failed.
+./my_sh.sh: line 2:  3403 已經終止            ./hw6_3 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_3/hbewi32954jfdxkwei/hw6.in3 > 6_3_3.out
+
+real	0m0.154s
+user	0m0.044s
+sys	0m0.012s
+Runtime error: non-zero exit status
+Result: RE
+---
+hw6_3: avl_ntudsa.c:122: avl_probe: Assertion `x->avl_balance == +1' failed.
+./my_sh.sh: line 2:  3406 已經終止            ./hw6_3 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_3/hbewi32954jfdxkwei/hw6.in4 > 6_3_4.out
+
+real	0m0.220s
+user	0m0.088s
+sys	0m0.000s
+Runtime error: non-zero exit status
+Result: RE
+---
+./my_sh.sh: line 2:  3409 程式記憶體區段錯誤   ./hw6_3 < /nfs/undergrad/01/b01902011/dsa2015_hw6/TA_hw6/6_3/hbewi32954jfdxkwei/hw6.in5 > 6_3_5.out
+
+real	0m0.159s
+user	0m0.052s
+sys	0m0.004s
+Runtime error: non-zero exit status
+Result: RE
+---
+
+real	0m0.692s
+user	0m0.512s
+sys	0m0.004s
+Result: AC
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Total: 5
+------
+

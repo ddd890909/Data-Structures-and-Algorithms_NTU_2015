@@ -1,0 +1,104 @@
+dsa15_021:
+[Copy] $cp -f ...
+------
+[Compiling]
+$make
+gcc -O2 -std=c99 -Wall avl.c -c
+gcc -O2 -std=c99 -Wall rb.c -c
+gcc -O2 -std=c99 -Wall bst.c -c
+g++ -O2 -std=c++11 -Wall hw6_2.cpp -c
+Makefile:24: recipe for target 'hw6_2.o' failed
+hw6_2.cpp: In function ‘void preorder_integer_bst(const bst_node*)’:
+hw6_2.cpp:14:42: error: ‘postorder_integer_bst’ was not declared in this scope
+   postorder_integer_bst(node->bst_link[0]);
+                                          ^
+hw6_2.cpp: In function ‘void preorder_integer_avl(const avl_node*)’:
+hw6_2.cpp:28:42: error: ‘postorder_integer_avl’ was not declared in this scope
+   postorder_integer_avl(node->avl_link[0]);
+                                          ^
+hw6_2.cpp: In function ‘void preorder_integer_rb(const rb_node*)’:
+hw6_2.cpp:42:40: error: ‘postorder_integer_rb’ was not declared in this scope
+   postorder_integer_rb(node->rb_link[0]);
+                                        ^
+hw6_2.cpp: In function ‘int main()’:
+hw6_2.cpp:75:10: warning: unused variable ‘p1’ [-Wunused-variable]
+   void **p1 = bst_probe(tree1, element);
+          ^
+hw6_2.cpp:76:10: warning: unused variable ‘p2’ [-Wunused-variable]
+   void **p2 = avl_probe(tree2, element);
+          ^
+hw6_2.cpp:77:10: warning: unused variable ‘p3’ [-Wunused-variable]
+   void **p3 = rb_probe(tree3, element);
+          ^
+hw6_2.cpp: In function ‘int int_compare(const void*, const void*, void*)’:
+hw6_2.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [hw6_2.o] Error 1
+
+$make hw6_2
+g++ -O2 -std=c++11 -Wall hw6_2.cpp -c
+Makefile:24: recipe for target 'hw6_2.o' failed
+hw6_2.cpp: In function ‘void preorder_integer_bst(const bst_node*)’:
+hw6_2.cpp:14:42: error: ‘postorder_integer_bst’ was not declared in this scope
+   postorder_integer_bst(node->bst_link[0]);
+                                          ^
+hw6_2.cpp: In function ‘void preorder_integer_avl(const avl_node*)’:
+hw6_2.cpp:28:42: error: ‘postorder_integer_avl’ was not declared in this scope
+   postorder_integer_avl(node->avl_link[0]);
+                                          ^
+hw6_2.cpp: In function ‘void preorder_integer_rb(const rb_node*)’:
+hw6_2.cpp:42:40: error: ‘postorder_integer_rb’ was not declared in this scope
+   postorder_integer_rb(node->rb_link[0]);
+                                        ^
+hw6_2.cpp: In function ‘int main()’:
+hw6_2.cpp:75:10: warning: unused variable ‘p1’ [-Wunused-variable]
+   void **p1 = bst_probe(tree1, element);
+          ^
+hw6_2.cpp:76:10: warning: unused variable ‘p2’ [-Wunused-variable]
+   void **p2 = avl_probe(tree2, element);
+          ^
+hw6_2.cpp:77:10: warning: unused variable ‘p3’ [-Wunused-variable]
+   void **p3 = rb_probe(tree3, element);
+          ^
+hw6_2.cpp: In function ‘int int_compare(const void*, const void*, void*)’:
+hw6_2.cpp:60:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [hw6_2.o] Error 1
+
+$make hw6_3
+gcc -O2 -std=c99 -Wall avl_ntudsa.c -c
+g++ -O2 -std=c++11 -Wall avl_ntudsa.o hw6_3.o -o hw6_3
+
+------
+
+[Error]Execute hw6_2 error: Executable file not found
+[Executing] $./hw6_3
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Exceed 2 seconds
+Result: TLE
+---
+Total: 0
+------
+
